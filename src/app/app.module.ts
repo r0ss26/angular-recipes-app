@@ -5,8 +5,9 @@ import { AppComponent } from './app.component';
 import { RecipeListComponent } from './recipe-list/recipe-list.component';
 import { RecipeItemComponent } from './recipe-list/recipe-item/recipe-item.component';
 import { RecipeDetailComponent } from './recipe-list/recipe-item/recipe-detail/recipe-detail.component';
-import { ShoppingList } from './shopping-list/shopping-list.component'
-import { ShoppingListEdit } from './shopping-list/shopping-list-edit/shopping-list-edit.component'
+import { ShoppingList } from './shopping-list/shopping-list.component';
+import { ShoppingListEdit } from './shopping-list/shopping-list-edit/shopping-list-edit.component';
+import { Header } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,12 +16,11 @@ import { ShoppingListEdit } from './shopping-list/shopping-list-edit/shopping-li
     RecipeItemComponent,
     RecipeDetailComponent,
     ShoppingList,
-    ShoppingListEdit
+    ShoppingListEdit,
+    Header,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
