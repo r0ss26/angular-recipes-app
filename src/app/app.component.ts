@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'course-project';
+  page: string;
+
+  onPageChanged(page: string) {
+    this.page = page;
+  }
 }
